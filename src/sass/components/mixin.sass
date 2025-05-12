@@ -1,0 +1,43 @@
+=gradient($url)
+    background: linear-gradient(-60deg,rgba(109, 211, 205,0.8 )0%, rgba(109, 69, 255,0.8) 100%), url(#{$url}) center/cover
+
+=mapa($enter)
+    background: linear-gradient(-60deg,rgba(135, 211, 205, 0.7)0%, rgba(109, 69, 225, 0.7) 100%), url(#{$enter}) center/cover
+
+=font-family($fonts)
+    font-family: 'Maven Pro'
+
+=btn($fixed: true, $empty: false)
+    display: inline-block
+    font-size: 12px
+    transition: .5s ease
+    letter-spacing: 1px
+    text-transform: uppercase
+    padding: 16.5px 0 16.5px 0
+    color: #fff
+    font-weight: 700
+    text-align: center
+    border-radius: 25px
+    @if $fixed
+        width: 190px
+        color: #c2c9db
+        background-color: #fff
+        box-shadow: 0 0 10.5px 5px rgba(204,204,223,0.5)
+        border: 1px solid #d7dbe8
+        &:hover
+            color: #fff
+            background-color: #6e45e2
+            border-color: #6e45e2
+    @else 
+        width: 150px
+        background-color: rgba(110,69,226,0)
+        border: 1px solid #fff
+    @if $empty != false
+        color: #c2c9db
+        background-color: #fff
+        border: 1px solid #fff
+        box-shadow: none
+        &:hover
+            color: #fff
+            background-color: #6e45e2
+            border-color: #6e45e2
