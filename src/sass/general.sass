@@ -59,6 +59,7 @@ h1
   .cta-nav
     +btn(false)
     transition: .5s ease
+    display: none
 
   .cta-nav:hover
     background-color: #fff
@@ -386,7 +387,7 @@ a
   border-top: 1rem solid #6e45e2
 
 .one
-  padding-top: 182rem
+  padding-top: 100rem
   padding-bottom: 40rem
   color: #fff
 
@@ -611,17 +612,17 @@ footer div:last-child p
   transition: all 1s ease
 
 .burger:hover > .b1 
-  transform: translateX(20px)
+  transform: translateY(20px)
 
 .burger:hover > .b2 
-  transform: translateX(10px)
+  transform: translateY(10px)
 
 
 .b1 
-  width: 20px
+  width: 40px
 
 .b2 
-  width: 30px
+  width: 40px
 
 .b3 
   width: 40px
@@ -645,6 +646,10 @@ footer div:last-child p
   .burger 
     display: none
   
+  .cta-nav
+    +btn(false)
+    display: flex
+
   .top-line 
     padding: 0 10px
   
