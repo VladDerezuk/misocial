@@ -15,9 +15,9 @@ mixin menu(mainMenu, colorTheme="light")
                 span.logotext MISOCIAL
         nav.nav.flex-between.items-center
             div.burger
-                span.burge.b1
-                span.burge.b2
-                span.burge.b3
+                span.burge.menu1
+                span.burge.menu2
+                span.burge.menu3
             ul.Vertix.menu(class=colorTheme) 
                 for item in mainMenu 
                     li.smalltextlogo 
@@ -83,7 +83,7 @@ mixin menu(mainMenu, colorTheme="light")
 mixin card(oneCard)
     figure
         figcaption 
-            img.imgsvg(src=oneCard.img, alt=oneCard.alt)
+            img.imgpng(src=oneCard.img, alt=oneCard.alt)
             p.personal #{oneCard.personal}
             p.price
                 sup
