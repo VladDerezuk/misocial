@@ -5,6 +5,7 @@
   padding: 0
 
 html
+  scroll-behavior: smooth
   font-size: 0.7px
   +media (1130)
       font-size: 1px
@@ -24,7 +25,7 @@ footer > div:first-child
   +mapa('../img/mapa.png')
 
 .footerok
-  padding: 200rem
+  padding: 150rem
 
 header
   text-align: center
@@ -63,6 +64,7 @@ h1
   gap: 17rem
 
 .light
+  overflow: hidden
   a
     color: white
 
@@ -431,7 +433,6 @@ a
   border-top: 1rem solid #6e45e2
 
 .one
-  margin-top: 100rem
   padding-bottom: 40rem
   color: #fff
 
@@ -441,11 +442,11 @@ a
   color: #9fa4af
 
 .three
-  width: 394rem
   padding-bottom: 100rem
   color: #9fa4af
 
 .verx
+  margin-top: 100rem
   padding: 40rem
 
 h2
@@ -461,6 +462,7 @@ h2
   padding: 18rem
 
 .Vertix 
+  overflow: hidden
   list-style: none
   display: flex
   flex-wrap: wrap
@@ -571,8 +573,6 @@ figure:last-child img
 
 span.currency
   position: absolute
-  top: 100%
-  left: 200%
 
 .fourth
   padding-bottom: 24rem
@@ -696,12 +696,12 @@ footer div:last-child p
 .menu 
   overflow: hidden
   position: absolute
-  top: 0
-  left: -150%
-  z-index: 2
-  padding: 60rem
+  top: 0%
+  left: 150%
+  z-index: 1
+  padding: 100rem
   background-color: #6875cf
-  transition: all .5s ease
+  transition: all .6s ease
   +media(1240)
     position: static
     display: flex
@@ -723,8 +723,9 @@ footer .menu
     
 .cancel 
   position: absolute
-  top: -10px
-  right: 5px
+  top: -152%
+  left: -33%
+  right: 5%
   cursor: pointer
   +media (500)
       display: none

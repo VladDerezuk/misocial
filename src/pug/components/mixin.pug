@@ -18,11 +18,11 @@ mixin menu(mainMenu, colorTheme="light")
                 span.burge.menu1
                 span.burge.menu2
                 span.burge.menu3
+            li.cancel X
             ul.Vertix.menu(class=colorTheme) 
                 for item in mainMenu 
                     li.smalltextlogo 
                         a.andre(href=item[1]) #{item[0]} 
-            li.cancel x
             a.gav.cta-nav(href="") get started  
 
 -
@@ -91,9 +91,9 @@ mixin card(oneCard)
                 b #{oneCard.price} 
                 sub.time
                     if isMonth 
-                        | /month 
-                    else 
                         | /year
+                    else 
+                        | /month
             ul.description
                 for item in oneCard.description
                     li #{item}
