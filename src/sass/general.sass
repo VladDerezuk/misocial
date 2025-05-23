@@ -72,7 +72,7 @@ h1
     +btn(false)
     transition: .5s ease
     display: none
-    +media (1440)
+    +media (1024)
         display: flex
         +btn(false)
 
@@ -392,7 +392,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 24%
+  top: 19%
   left: -45rem
   width: 24rem
   height: 1rem
@@ -403,7 +403,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 24%
+  top: 19%
   right: -45rem
   width: 24rem
   height: 1rem
@@ -414,7 +414,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 80%
+  top: 84%
   left: -45rem
   width: 24rem
   height: 1rem
@@ -425,7 +425,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 80%
+  top: 84%
   right: -45rem
   width: 24rem
   height: 1rem
@@ -462,9 +462,9 @@ h2
   padding: 18rem
 
 .Vertix 
+  display: block
   overflow: hidden
   list-style: none
-  display: flex
   flex-wrap: wrap
   align-items: center
   gap: 60rem
@@ -477,8 +477,9 @@ h2
   +font-family('Maven Pro')
 
 .smalltextlogo 
+  text-align: left
   font-size: 16rem
-  line-height: 19px
+  line-height: 7em
   color: #ffffff
   font-weight: 500
   font-family: "Maven Pro"
@@ -661,7 +662,7 @@ footer div:last-child p
   width: 50px
   height: 100%
   cursor: pointer
-  +media(1230) 
+  +media(1024) 
     display: none
 
 
@@ -695,31 +696,32 @@ footer div:last-child p
 
 .menu 
   overflow: hidden
-  position: absolute
+  position: fixed
   top: 0%
-  left: 150%
+  left: -150%
   z-index: 1
-  padding: 100rem
+  width: 20vw
+  height: 100vh
+  padding: 50rem
   background-color: #6875cf
   transition: all .6s ease
-  +media(1240)
+  +media(1024)
+    width: auto
+    height: auto
     position: static
     display: flex
     justify-content: space-between
-    gap: 60rem
     background-color: transparent
 
 footer .menu
   +media(320)
     display: none
-  +media(1240)
+  +media(1024)
     position: static
     top: 0
     left: 150%
     z-index: 2
     padding: 60rem
-    background-color: #6875cf
-    transition: all .5s ease
     
 .cancel 
   position: absolute
