@@ -25,7 +25,7 @@ footer > div:first-child
   +mapa('../img/mapa.png')
 
 .footerok
-  padding: 150rem
+  padding: 150rem 0
 
 header
   text-align: center
@@ -70,6 +70,8 @@ h1
 
   .cta-nav
     +btn(false)
+    margin-top: 10rem
+    align-items: center
     transition: .5s ease
     display: none
     +media (1024)
@@ -392,7 +394,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 19%
+  top: 17%
   left: -45rem
   width: 24rem
   height: 1rem
@@ -403,7 +405,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 19%
+  top: 17%
   right: -45rem
   width: 24rem
   height: 1rem
@@ -414,7 +416,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 84%
+  top: 86%
   left: -45rem
   width: 24rem
   height: 1rem
@@ -425,7 +427,7 @@ a
   content: ""
   position: absolute
   display: block
-  top: 84%
+  top: 86%
   right: -45rem
   width: 24rem
   height: 1rem
@@ -509,7 +511,7 @@ main
   flex-wrap: wrap
   gap: 50rem
   justify-content: center
-  +media(1440)
+  +media(1244)
     flex-wrap: nowrap
 
 .maincards > figure
@@ -574,7 +576,6 @@ figure:last-child img
 
 span.currency
   position: absolute
-
 .fourth
   padding-bottom: 24rem
   color: #fff
@@ -700,7 +701,7 @@ footer div:last-child p
   top: 0%
   left: -150%
   z-index: 1
-  width: 20vw
+  width: 25vw
   height: 100vh
   padding: 50rem
   background-color: #6875cf
@@ -717,11 +718,12 @@ footer .menu
   +media(320)
     display: none
   +media(1024)
+    width: auto
+    height: auto
     position: static
-    top: 0
-    left: 150%
-    z-index: 2
-    padding: 60rem
+    display: flex
+    justify-content: space-between
+    background-color: transparent
     
 .cancel 
   position: absolute
