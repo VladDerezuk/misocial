@@ -1,1 +1,1 @@
-const dark=document.querySelector(".dark-bgc"),burger=document.querySelector(".burger"),menu=document.querySelector(".menu");burger.addEventListener("click",(function(){menu.classList.toggle("activemenu"),burger.classList.toggle("burgeractive")}));
+const dark=document.querySelector(".dark-bgc"),burger=document.querySelector(".burger"),menu=document.querySelector(".menu");body=document.querySelector("body"),burger.addEventListener("click",(function(){menu.classList.toggle("activemenu"),burger.classList.toggle("burgeractive"),body.classList.toggle("hidden")}));
