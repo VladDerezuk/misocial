@@ -85,10 +85,9 @@ mixin card(oneCard)
             img.imgpng(src=oneCard.img, alt=oneCard.alt)
             p.personal #{oneCard.personal}
             p.price
-                sup
-                    span.currency #{oneCard.currency}
-                b #{oneCard.price} 
-                sub.time
+                span.currency #{oneCard.currency}
+                b #{oneCard.price}
+                span.time
                     if isMonth 
                         | /year
                     else 
