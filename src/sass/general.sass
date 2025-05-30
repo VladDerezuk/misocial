@@ -41,7 +41,7 @@ h1
   padding-top: 30rem
   font-size: 86rem
   letter-spacing: -3rem
-  line-height: 72px
+  line-height: 72rem
   color: #ffffff
   font-weight: 500
   font-family: "Maven Pro"
@@ -50,11 +50,23 @@ h1
 .bottom-text
   display: flex
   flex-wrap: wrap
-  width: 387rem
+  padding-bottom: 170rem
+  max-width: 387rem
   font-size: 16rem
-  line-height: 28px
-  padding-bottom: 150rem
+  line-height: 28rem
   color: #fff
+  font-weight: 400
+  font-family: "Maven Pro"
+  text-align: center
+
+.bottom-text.three
+  padding-bottom: 0rem
+  display: flex
+  flex-wrap: wrap
+  max-width: 387rem
+  font-size: 16rem
+  line-height: 28rem
+  color: #9fa4af
   font-weight: 400
   font-family: "Maven Pro"
   text-align: center
@@ -63,7 +75,6 @@ h1
   gap: 17rem
 
 .light
-  overflow: hidden
   a
     color: white
 
@@ -88,11 +99,11 @@ ul.light a:hover:before
   transition: .5s ease
   top: 25rem
   left: -2rem
-  width: 50rem
+  width: 100%
   height: 2rem
-  transform: scale(0)
+  transform: scale(4)
   border: none
-  border-top: 2rem solid #fff
+  background-color: #fff
 
 .button > .cta-nav:first-child
   +btn(true, true)
@@ -115,29 +126,6 @@ a
   position: relative
   transition: .5s ease
 
-.andre:hover:before
-    content: ""
-    position: absolute
-    top: 25rem
-    left: -5rem
-    width: 60rem
-    height: 2rem
-    transform: scale(1)
-    border: none
-    border-top: 2rem solid #000
-
-.andre:before
-  content: ""
-  position: absolute
-  transition: .5s ease
-  top: 25rem
-  left: -5rem
-  width: 60rem
-  height: 2rem
-  transform: scale(0)
-  border: none
-  border-top: 2rem solid #000
-
 .knopkashka
   display: block
   border-radius: 32rem
@@ -148,10 +136,12 @@ a
   transition: all 0.5s ease
 
 .knopkashka img
+  padding-top: 100rem
   padding: 22rem
   border-radius: 32rem
   transition: all 0.5s ease
   +media (1440)
+    padding-top: 100rem
       padding: 20px
       height: 20px
       width: 20px
@@ -166,7 +156,7 @@ a
 .header-text
   font-size: 14rem
   letter-spacing: 1rem
-  line-height: 32px
+  line-height: 32rem
   text-transform: uppercase
   font-weight: 700
   font-family: "Maven Pro"
@@ -245,7 +235,6 @@ h2
 
 .vertix 
   display: block
-  overflow: hidden
   list-style: none
   flex-wrap: wrap
   align-items: center
@@ -257,6 +246,8 @@ h2
   letter-spacing: 6rem
   font-weight: 700
   +font-family('Maven Pro')
+
+
 
 .smalltextlogo 
   padding: 50rem 0
@@ -364,7 +355,6 @@ figure:last-child img
   position: relative
 
 .fourth
-  padding-bottom: 24rem
   color: #fff
 
 span.currency
@@ -493,7 +483,6 @@ footer div:last-child p
 //   z-index: 1
 
 .menu 
-  overflow: hidden
   position: fixed
   top: 0%
   left: -150%
@@ -505,7 +494,7 @@ footer div:last-child p
   transition: all .6s ease
   +media(1024)
     padding: 0
-    padding-right: 15rem
+    padding-right: 30rem
     width: auto
     height: auto
     position: static
