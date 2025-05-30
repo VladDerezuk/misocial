@@ -93,29 +93,35 @@ h1
     border: 1rem solid transparent
     color: #ccc
 
-ul.light a:hover:before
+ul.light a:before
   content: ""
   position: absolute
   top: 25rem
   left: -2rem
   width: 100%
   height: 2rem
-  transform: scale(1)
+  transform: scale(0)
+  transition: .5s ease
   border: none
   background-color: #fff
-  transition: 5s ease
 
-ul.dark a:hover:before
+ul.light a:hover:before
+  transform: scale(1)
+
+ul.dark a:before
   content: ""
   position: absolute
   top: 25rem
   left: -2rem
   width: 100%
   height: 2rem
-  transform: scale(1)
+  transform: scale(0)
+  transition: .5s ease
   border: none
   background-color: #000
-  transition: 5s ease
+
+ul.dark a:hover:before
+  transform: scale(1)
 
 .button > .cta-nav:first-child
   +btn(true, true)
@@ -151,12 +157,10 @@ a
   column-gap: 30rem
 
 .knopkashka img
-  padding-top: 100rem
   padding: 22rem
   border-radius: 32rem
   transition: all 0.5s ease
   +media (1440)
-    padding-top: 100rem
       padding: 20px
       height: 20px
       width: 20px
