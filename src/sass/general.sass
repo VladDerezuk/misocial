@@ -23,7 +23,7 @@ footer > div:first-child
   +mapa('../img/mapa.png')
 
 .footerok
-  padding: 150rem 0
+  padding: 170rem 0
 
 header
   text-align: center
@@ -75,14 +75,16 @@ h1
   gap: 17rem
 
 .light
+  display: flex
+  justify-content: space-between
   a
     color: white
 
-  .cta-nav
-    +btn(false)
-    margin-top: 10rem
-    align-items: center
-    transition: .5s ease
+.cta-nav
+  +btn(false)
+  display: flex
+  justify-content: center
+  text-align: center
     display: none
     +media (1024)
         display: flex
@@ -93,6 +95,7 @@ h1
     border: 1rem solid transparent
     color: #ccc
 
+  
 ul.light a:before
   content: ""
   position: absolute
@@ -139,10 +142,6 @@ ul.dark a:hover:before
 
 a 
   text-decoration: none
-
-.navigation
-  display: flex
-  justify-content: flex-between
 
 .andre
   position: relative
@@ -276,23 +275,28 @@ h2
 
 
 .smalltextlogo 
-  padding: 50rem 0
+  padding: 70rem 0
   text-align: left
-  font-size: 16rem
+  font-size: 25rem
   color: #ffffff
   font-weight: 500
   font-family: "Maven Pro"
   +media(1024)
     padding: 0rem
+    font-size: 16rem
 
-.flex-between 
+.flexdyr
   display: flex
   justify-content: center
   flex-wrap: wrap
-  +media (400)
-      display: flex
-      flex-wrap: nowrap
-      justify-content: space-between
+
+
+.flex-between
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  +media(500)
+    flex-wrap: nowrap
 
 .items-center 
   display: flex
@@ -477,7 +481,6 @@ footer div:last-child p
   +media(1024) 
     display: none
 
-
 .burge
   display: block
   margin: 4px
@@ -515,7 +518,7 @@ footer div:last-child p
   z-index: 1
   width: 25vw
   height: 100vh
-  padding: 50rem
+  padding: 60rem
   background-color: #6875cf
   transition: all .6s ease
   +media(1024)
