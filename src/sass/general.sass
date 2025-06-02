@@ -140,6 +140,10 @@ ul.dark a:hover:before
 a 
   text-decoration: none
 
+.navigation
+  display: flex
+  justify-content: flex-between
+
 .andre
   position: relative
   transition: .5s ease
@@ -171,6 +175,9 @@ a
 
 .knopkashka:hover
   box-shadow: 0 0 10.5rem 10.5rem rgba(204,204,223,0.9)
+
+.dark > .burger
+  display: none
 
 .header-text
   font-size: 14rem
@@ -282,7 +289,7 @@ h2
   display: flex
   justify-content: center
   flex-wrap: wrap
-  +media (500)
+  +media (400)
       display: flex
       flex-wrap: nowrap
       justify-content: space-between
@@ -521,8 +528,7 @@ footer div:last-child p
     background-color: transparent
 
 footer .menu
-  +media (320)
-    display: none
+  display: none
   +media (1024)
     width: auto
     height: auto
@@ -550,3 +556,11 @@ footer .menu
 
 .golovnaimg
   width: 80rem
+
+.burger
+  display: none
+
+header .burger
+  display: block
+  +media(1024)
+    display: none
