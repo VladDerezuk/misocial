@@ -85,10 +85,10 @@ h1
   display: flex
   justify-content: center
   text-align: center
-    display: none
-    +media (1024)
-        display: flex
-        +btn(false)
+  display: none
+  +media (1024)
+    display: flex
+    +btn(false)
 
   .cta-nav:hover
     background-color: #fff
@@ -275,7 +275,7 @@ h2
 
 
 .smalltextlogo 
-  padding: 70rem 0
+  padding: 50rem 0
   text-align: left
   font-size: 25rem
   color: #ffffff
@@ -285,10 +285,6 @@ h2
     padding: 0rem
     font-size: 16rem
 
-.flexdyr
-  display: flex
-  justify-content: center
-  flex-wrap: wrap
 
 
 .flex-between
@@ -296,7 +292,16 @@ h2
   justify-content: space-between
   flex-wrap: wrap
   +media(500)
-    flex-wrap: nowrap
+  flex-wrap: nowrap
+
+.dark
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  +media(420)
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
 
 .items-center 
   display: flex
@@ -516,9 +521,8 @@ footer div:last-child p
   top: 0%
   left: -150%
   z-index: 1
-  width: 25vw
   height: 100vh
-  padding: 60rem
+  padding: 50rem
   background-color: #6875cf
   transition: all .6s ease
   +media(1024)
